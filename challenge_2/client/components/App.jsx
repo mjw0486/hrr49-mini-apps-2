@@ -1,6 +1,6 @@
 import React from 'react';
 import Search from './Search.jsx';
-import Chart from './Chart.jsx';
+import Charts from './Charts.jsx';
 
 class App extends React.Component{
   constructor(props) {
@@ -12,14 +12,14 @@ class App extends React.Component{
   }
 
   setData(data) {
-    // this.setState({data: data})
+    this.setState({data: data})
   }
   render() {
     return (
       <div>
         <h1>BitCoin Tracker</h1>
         <Search data={this.state.data} setData={this.setData}/>
-        <Chart data={this.state.data}/>
+        <Charts data={this.state.data}/>
       </div>
     )
   };
