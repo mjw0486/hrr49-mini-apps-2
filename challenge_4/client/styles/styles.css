@@ -1,0 +1,36 @@
+body {
+  background-color: palevioletred;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+}
+
+#gameBoardGrid {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.rows{
+  display:flex;
+  flex-direction: row;
+  width: 250px;
+  height: 25px;
+  margin-bottom: 6px;
+}
+
+.individual-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: hotpink;
+  border-style: outset;
+  border-width: medium;
+  border-color: white grey grey white;
+}
+
+
